@@ -2,30 +2,14 @@
 <html>
 <head>
   <title>Battery Status API Example</title>
- <script type="text/javascript">
-window.onload = function () {
-
-alert('hai');
-var battery = navigator.battery || navigator.mozBattery;
-if (battery) {
-    // This works in Firefox
-    console.log(battery.level * 100 + '%');
-} else if (navigator.getBattery) {
-    // This works in Google Chrome
-    navigator.getBattery().then(function(battery) {
-        console.log(battery.level * 100 + '%');
-    });
-}
-
-}
-
-</script>
+<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-  <div id="charging">(charging state unknown)</div>
-  <div id="level">(battery level unknown)</div>
-  <div id="dischargingTime">(discharging time unknown)</div>
- <div id="chargingTime">(charging time unknown)</div>
+  The battery is charging -<b id="charging">(charging state unknown)</b> <br />
+  The charge level is -<b id="level">(battery level unknown)</b> <br />
+  The discharing time is -<b id="dischargingTime">(discharging time unknown)</b> <br />
+ The charing time is -<b id="chargingTime">(charging time unknown)</b><br />
    <script type="text/javascript" src="js/app.js" defer></script>
+
 </body>
 </html>

@@ -5,6 +5,7 @@
 window.addEventListener('DOMContentLoaded', function() {
  
 var battery = navigator.battery || navigator.mozBattery;
+
 if (battery) {
     // This works in Firefox
 document.querySelector('#level').textContent = battery.level * 100 + '%';

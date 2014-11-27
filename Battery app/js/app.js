@@ -15,7 +15,10 @@ document.querySelector('#chargingTime').textContent = battery.chargingTime;
 } else if (navigator.getBattery) {
     // This works in Google Chrome
     navigator.getBattery().then(function(battery) {
-document.querySelector('#level').textContent = battery.level * 100 + '%'
+document.querySelector('#level').textContent = battery.level * 100 + '%';
+document.querySelector('#charging').textContent =  battery.charging;
+document.querySelector('#dischargingTime').textContent = battery.dischargingTime;
+document.querySelector('#chargingTime').textContent = battery.chargingTime;
     });
 }
 
