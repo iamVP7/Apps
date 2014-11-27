@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+
+  "name": "Battery API",
+  "description": "An example showing battery API usage.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "/img/icons/icon.svg",
+    "default_popup": "index.html"
+  }
+}
